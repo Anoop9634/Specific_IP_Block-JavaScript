@@ -1,0 +1,38 @@
+<!--    ******* block script********   -->
+
+
+  <script type="text/javascript">
+	function myIP() {
+    if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
+    else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+    xmlhttp.open("GET","hostname/path_of_GETIP.PHP file/getIp.php",false);
+    xmlhttp.send();
+    var info=JSON.parse(xmlhttp.responseText);
+    return info['REMOTE_ADDR'];
+}
+        var myIp=myIP();
+
+         if(myIp == 'xx.xx.xx.xx' || myIp == 'xx.xx.xx.xx'){
+          window.location.replace('http://www.xxxxx.com');
+           
+       }
+        else if(myIp == 'xx.xx.xx.xx'){
+        window.location.replace('http://www.xxxxx.energy');
+       }
+       else if(myIp == 'xx.xx.xx.xx'){
+        window.location.replace('http://www.xxxxx.com');
+       }   
+        else if(myIp == 'xx.xx.xx.xx'){
+        window.location.replace('http://www.xxxxx.com');
+       } 
+        else if(myIp == 'xx.xx.xx.xx'){
+        window.location.replace('http://www.xxxxxxxxxx.com');
+       }   
+        else if(myIp == 'xx.xx.xx.xx' || myIp =='xx.xx.xx.xx'){
+          window.location.replace('http://www.xxxxx.com');
+       }
+     
+      </script>
+
+
